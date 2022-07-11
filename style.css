@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 100%;
+}
+body{
+    background-image: url('images/pozad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(199,195,69);
+    background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 88%);
+    padding: 1em;
+    border-bottom: 2px solid black;
+}
+#meni{
+    margin: auto 0px;
+}
+#naslov{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin: auto 0px;
+    transition: 0.5s;
+}
+#naslov:hover{
+    color: white;
+    cursor: pointer;
+    transform: translateY(-10px)
+}
+#glavniMeni{
+    list-style-type: none;
+    margin: auto;
+}
+#glavniMeni li{
+    display: inline-block;
+    margin:0px;
+    padding:1em 2em;
+}
+#glavniMeni li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+    font-size: 1.2rem;
+}
+#glavniMeni li:hover{
+    border-bottom: 0.1rem solid black;
+    /*background-color: azure;*/
+}
+#glavniMeni li a:hover{
+    color:white
+}
+/*#ime{
+    transform:skewY(-1.5deg);
+    transform-origin: bottom left;
+}*/
+#ime{
+font-size: 3rem;
+}
+#ime span{
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transform: translateX(50px);
+    display: inline-block;
+}
+#sadrzaj .pomeranje{
+    transform: translateX(0);
+    opacity: 1;
+}
+#sadrzaj h3{
+    font-size: 2.5rem;
+}
+button{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.3em 1.2em;
+}
+#info{
+    color: white;
+    background-color: transparent;
+    margin-top: 1.5em;
+    border: 3px solid white;
+    font-size: 1.3rem;
+    transition: 0.35s;
+    opacity: 0;
+}
+#info:hover{
+    color: black;
+    background-color: white;
+}
+#sadrzaj{
+    
+    width: 100%;
+    background-image: url("images/crno.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:17em 12.5em;
+    color: white;
+
+}
+#sadrzaj h3{
+    opacity: 0;
+}
+#sadrzaj h3.pojava{
+    opacity: 1;
+    transition: 1s;
+}
+#sadrzaj #info.pojava{
+    opacity: 1;
+    transition: 0.4s;
+}
+#sviProjekti{
+    border:none;
+    margin:5em 4em 5em 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em 0em;
+    background-color: whitesmoke;
+    
+}
+.projekat{
+    width: 34vw;
+    height: 32vh;
+    border: 1px solid black;
+    background-color: dimgray;
+    color: deepskyblue;
+    margin: 1.5em 0.5em;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    object-fit: cover;
+}
+.broj1{
+    background-image: url('images/projekat_1.png');
+}
+.broj2{
+    background-image: url('images/projekat_2.png');
+}
+.detalji{
+    width: 16rem;
+    padding: 0.7em;
+    background-color: black;
+    color: white;
+    position: absolute;
+    border: 2px solid dimgray;
+    display: none;
+    border-radius: 10px;
+    z-index: 2;
+    top: 3rem;
+    right:-3rem;
+}
+.naslovProjekta{
+    margin-bottom: 0.7em;
+}
+.omeni{
+    padding: 11vh 18vw;  /* 1vh = 10,8px , 1vw = 19,2*/
+    background-image: url('images/pozad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.format{
+    padding: 4.5vh 4.5vw;
+    background: rgb(199,195,69);
+background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 88%);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.format h1{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.format p{
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 1.3em;
+}
+.format hr{
+    margin: 0.7rem auto 2.5rem auto;
+    height: 3px;
+    background-color: black;
+    width: 19vw;
+}
+.format:hover{
+    transform: translateY(-30px);
+}
+#footer{
+    padding: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+#footer p{
+    font-size: 1.4rem;
+    margin: auto 0px;
+}
+#footer p a{
+    text-decoration: none;
+    font-weight: bold;
+}
+#footer p a:hover{
+    color: white;
+}
+
+@media only screen and (max-width:1200px){
+    html{
+        font-size: 75%;
+    }
+}
+@media only screen and (max-width:900px){
+    html{
+        font-size: 55%;
+    }
+    .projekat{
+        width: 60vw;
+        height: 40vh;
+    }
+}
+@media only screen and (max-width:500px){
+    html{
+        font-size: 70%;
+    }
+    .projekat{
+        width: 80vw;
+        height: 25vh;
+        margin: 4em auto;
+        background-size:cover;
+    }
+    #sviProjekti{
+        background-color: transparent;
+    }
+    #sadrzaj{
+        padding:17em 3.8em;
+    }
+}
+
+
