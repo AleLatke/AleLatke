@@ -57,6 +57,41 @@ body{
 #glavniMeni li a:hover{
     color:white
 }
+.mobileUl{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    transition: 0.5s;
+
+}
+.mobileUl li{
+    padding: 2em 0em;
+}
+.mobileUl li a{
+    text-decoration: none;
+    color: black;
+}
+.mobileMenu{
+    width: 100%;
+    background:rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    right: 0;
+}
+#dugmeMeni{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5em;
+    background-color: transparent;
+    font-size: 2rem;
+    border: 0;
+    display: none;
+}
 /*#ime{
     transform:skewY(-1.5deg);
     transform-origin: bottom left;
@@ -241,7 +276,14 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
     #sviProjekti{
         background-color: transparent;
     }
+    #meni{
+        display: none;
+    }
+    #dugmeMeni{
+        display: block;
+    }
     #sadrzaj{
+        position: relative;
         padding:17em 3.8em;
     }
 }

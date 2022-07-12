@@ -73,4 +73,32 @@ if(k === sviSpanovi.length){
 }
 }, 100);
 
+/*
+const mobilemenu = () => {
+    if(lista.style.display == 'none'){
+        lista.style.display == 'block'
+    }else{
+        lista.style.display == 'none'
+    }
+}
+
+
+let meni = document.querySelector('#dugmeMeni')
+let lista = document.querySelector('.mobileUl')
+    meni.addEventListener( 'click' , mobilemenu)
+
+    */
+    const mobilni = () => {
+        if(lista.style.display === 'none'){
+        lista.style.display = 'flex'
+        meni.innerHTML = 'X'
+        }else{
+            lista.style.display = 'none'
+            meni.innerHTML = `<ion-icon name="menu-outline"></ion-icon>`
+        }
+    }
     
+    let meni = document.querySelector('#dugmeMeni')
+let lista = document.querySelector('.mobileUl')
+    meni.addEventListener( 'click' , mobilni)
+
