@@ -89,12 +89,13 @@ let lista = document.querySelector('.mobileUl')
 
     */
     const mobilni = () => {
-        if(lista.style.display === 'none'){
-        lista.style.display = 'flex'
-        meni.innerHTML = 'X'
+
+        if(lista.style.display === 'flex'){
+        lista.style.display = 'none'
+        meni.innerHTML = `<ion-icon name="menu-outline"></ion-icon>`
         }else{
-            lista.style.display = 'none'
-            meni.innerHTML = `<ion-icon name="menu-outline"></ion-icon>`
+            lista.style.display = 'flex'
+            meni.innerHTML = 'X'
         }
     }
     
