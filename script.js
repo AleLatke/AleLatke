@@ -43,10 +43,12 @@ function funkcija() {
 //ANIMACIJA TEXTA
 //Prvo se od texta odvaja slovo po slovo u spanovima
 
-let textTag = document.querySelector('#ime')
-let text = textTag.textContent
-let spans = text.split('')
-textTag.innerHTML = '';
+let textTag = document.querySelector('h2')
+let spans;
+if(textTag != null){
+let text = textTag.innerText
+spans = text.split('')
+textTag.innerHTML = " ";
 
 for(let i = 0; i < spans.length; i++){
     if(spans[i] === " "){
@@ -54,6 +56,7 @@ for(let i = 0; i < spans.length; i++){
     }
 textTag.innerHTML += `<span>${spans[i]}</span>`
 }
+
 
 //onda se radi setinterval sa indeksiranjem
 //U set intervalu jedan segment je f-ja a drugi vreme trajanja u ms!
@@ -73,6 +76,8 @@ if(k === sviSpanovi.length){
 }
 }, 100);
 
+}
+
 /*
 const mobilemenu = () => {
     if(lista.style.display == 'none'){
@@ -89,17 +94,18 @@ let lista = document.querySelector('.mobileUl')
 
     */
     const mobilni = () => {
-
-        if(lista.style.display === 'flex'){
+        if(lista.style.display === 'block'){
         lista.style.display = 'none'
         meni.innerHTML = `<ion-icon name="menu-outline"></ion-icon>`
         }else{
-            lista.style.display = 'flex'
+            lista.style.display = 'block'
+            lista.style.transform = 'translateY(0rem)'
             meni.innerHTML = 'X'
         }
     }
     
     let meni = document.querySelector('#dugmeMeni')
-let lista = document.querySelector('.mobileUl')
+let lista = document.querySelector('.mobileMenu')
+let omeni = document.querySelector('.omeni')
     meni.addEventListener( 'click' , mobilni)
 

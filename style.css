@@ -57,38 +57,50 @@ body{
 #glavniMeni li a:hover{
     color:white
 }
+.wrapper{
+    width: 100%;
+}
 .mobileUl{
-    display: none;
+    display: flex;
     width: 100%;
     flex-direction: column;
     text-align: center;
     list-style-type: none;
-    transition: 0.5s;
+    margin: 0px auto;
+    padding: inherit;
 
 }
 .mobileUl li{
-    padding: 2em 0em;
+    padding: 2.5em 0em;
+    width: 100%;
+}
+.mobileUl li:hover{
+    background-color:dimgrey;
 }
 .mobileUl li a{
     text-decoration: none;
     color: black;
+    font-weight:600;
 }
 .mobileMenu{
+    display: none;
     width: 100%;
-    background:rgba(255, 255, 255, 0.7);
+    background:rgba(255, 255, 255, 0.90);
     position: absolute;
     top: 0;
     z-index: 2;
     left: 0;
     right: 0;
+    transition: 0.5s;
+    transform: translateY(-4rem);
 }
 #dugmeMeni{
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
     padding: 0.5em;
     background-color: transparent;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border: 0;
     display: none;
 }
@@ -159,15 +171,16 @@ button{
     justify-content: space-around;
     padding: 2em 0em;
     background-color: whitesmoke;
+    border-radius: 4.5rem;
     
 }
 .projekat{
     width: 34vw;
     height: 32vh;
-    border: 1px solid black;
+    border: 3px solid black;
     background-color: dimgray;
     color: deepskyblue;
-    margin: 1.5em 0.5em;
+    margin: 3.5em 0.5em;
     cursor: pointer;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,9 +189,16 @@ button{
 }
 .broj1{
     background-image: url('images/projekat_1.png');
+    background-size: cover;
 }
 .broj2{
     background-image: url('images/projekat_2.png');
+}
+.broj3{
+    background-image: url('images/Pijaca.png');
+}
+.broj5{
+    background-image: url('images/react.png');
 }
 .detalji{
     width: 16rem;
@@ -269,7 +289,7 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
     }
     .projekat{
         width: 80vw;
-        height: 25vh;
+        height: 45vh;
         margin: 4em auto;
         background-size:cover;
     }
@@ -283,9 +303,15 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
         display: block;
     }
     #sadrzaj{
-        position: relative;
         padding:17em 3.8em;
     }
+    .wrapper{
+        position: relative;
+    }
+    .omeni{
+        padding: 10vh 8vw;
+        width: 100%;
+}
 }
 
 
