@@ -163,9 +163,14 @@ button{
     opacity: 1;
     transition: 0.4s;
 }
+#podnaslov{
+    text-align: center;
+    padding: 3rem;
+    font-weight: bold;
+}
 #sviProjekti{
     border:none;
-    margin:5em 4em 5em 4em;
+    margin:0em 4em 5em 4em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -178,27 +183,18 @@ button{
     width: 34vw;
     height: 32vh;
     border: 3px solid black;
-    background-color: dimgray;
-    color: deepskyblue;
     margin: 3.5em 0.5em;
     cursor: pointer;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    object-fit: cover;
 }
-.broj1{
-    background-image: url('images/projekat_1.png');
+.projekat img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
     background-size: cover;
-}
-.broj2{
-    background-image: url('images/projekat_2.png');
-}
-.broj3{
-    background-image: url('images/Pijaca.png');
-}
-.broj5{
-    background-image: url('images/react.png');
+    background-repeat: no-repeat;
 }
 .detalji{
     width: 16rem;
@@ -213,6 +209,25 @@ button{
     top: 3rem;
     right:-3rem;
 }
+/*
+.detalji {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .projekat:hover .detalji {
+    bottom: 0;
+    height: 100%;
+}
+*/
 .naslovProjekta{
     margin-bottom: 0.7em;
 }
@@ -290,11 +305,12 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
     .projekat{
         width: 80vw;
         height: 45vh;
-        margin: 4em auto;
+        margin: 0em auto 6em auto;
         background-size:cover;
     }
     #sviProjekti{
         background-color: transparent;
+        padding-top: 0px;
     }
     #meni{
         display: none;
