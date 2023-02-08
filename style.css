@@ -43,6 +43,7 @@ body{
     display: inline-block;
     margin:0px;
     padding:1em 2em;
+    border-bottom: 0.1rem solid transparent;
 }
 #glavniMeni li a{
     text-decoration: none;
