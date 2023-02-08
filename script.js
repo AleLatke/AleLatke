@@ -54,6 +54,7 @@ for(let i = 0; i < spans.length; i++){
     if(spans[i] === " "){
         spans[i] = '&nbsp;';
     }
+    
 textTag.innerHTML += `<span>${spans[i]}</span>`
 }
 
@@ -99,13 +100,12 @@ let lista = document.querySelector('.mobileUl')
         meni.innerHTML = `<ion-icon name="menu-outline"></ion-icon>`
         }else{
             lista.style.display = 'block'
-            lista.style.transform = 'translateY(0rem)'
             meni.innerHTML = 'X'
         }
     }
     
     let meni = document.querySelector('#dugmeMeni')
-let lista = document.querySelector('.mobileMenu')
+let lista = document.querySelector('#glavniMeni')
 let omeni = document.querySelector('.omeni')
     meni.addEventListener( 'click' , mobilni)
 

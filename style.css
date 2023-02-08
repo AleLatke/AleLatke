@@ -20,9 +20,6 @@ body{
     padding: 1em;
     border-bottom: 2px solid black;
 }
-#meni{
-    margin: auto 0px;
-}
 #naslov{
     font-size: 2.5rem;
     font-weight: bold;
@@ -37,7 +34,7 @@ body{
 }
 #glavniMeni{
     list-style-type: none;
-    margin: auto;
+    margin: auto 0px;
 }
 #glavniMeni li{
     display: inline-block;
@@ -57,43 +54,6 @@ body{
 }
 #glavniMeni li a:hover{
     color:white
-}
-.wrapper{
-    width: 100%;
-}
-.mobileUl{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-    list-style-type: none;
-    margin: 0px auto;
-    padding: inherit;
-
-}
-.mobileUl li{
-    padding: 2.5em 0em;
-    width: 100%;
-}
-.mobileUl li:hover{
-    background-color:dimgrey;
-}
-.mobileUl li a{
-    text-decoration: none;
-    color: black;
-    font-weight:600;
-}
-.mobileMenu{
-    display: none;
-    width: 100%;
-    background:rgba(255, 255, 255, 0.90);
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    transition: 0.5s;
-    transform: translateY(-4rem);
 }
 #dugmeMeni{
     position: absolute;
@@ -313,8 +273,35 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
         background-color: transparent;
         padding-top: 0px;
     }
-    #meni{
+    #glavniMeni{
         display: none;
+        width: 100%;
+        text-align: center;
+        list-style-type: none;
+        margin: 0px auto;
+        padding: inherit;
+        z-index: 2;
+        width: 100%;
+        background:rgba(255, 255, 255, 0.90);
+        position: absolute;
+        top: 6rem;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        transition: 0.5s;
+    
+    }
+    #glavniMeni li{
+        padding: 2.5em 0em;
+        width: 100%;
+    }
+    #glavniMeni li:hover{
+        background-color:dimgrey;
+    }
+    #glavniMeni li a{
+        text-decoration: none;
+        color: black;
+        font-weight:600;
     }
     #dugmeMeni{
         display: block;
@@ -322,7 +309,7 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
     #sadrzaj{
         padding:17em 3.8em;
     }
-    .wrapper{
+    #header{
         position: relative;
     }
     .omeni{
