@@ -43,7 +43,7 @@ function funkcija() {
 //ANIMACIJA TEXTA
 //Prvo se od texta odvaja slovo po slovo u spanovima
 
-let textTag = document.querySelector('h2')
+let textTag = document.querySelector('.ime')
 let spans;
 if(textTag != null){
 let text = textTag.innerText
@@ -53,6 +53,8 @@ textTag.innerHTML = " ";
 for(let i = 0; i < spans.length; i++){
     if(spans[i] === " "){
         spans[i] = '&nbsp;';
+    }if(i===17){
+        textTag.innerHTML+=`<br/>`;
     }
     
 textTag.innerHTML += `<span>${spans[i]}</span>`

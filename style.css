@@ -69,10 +69,10 @@ body{
     transform:skewY(-1.5deg);
     transform-origin: bottom left;
 }*/
-#ime{
+.ime{
 font-size: 3rem;
 }
-#ime span{
+.ime span{
     opacity: 0;
     transition: all 0.3s ease-out;
     transform: translateX(50px);
@@ -109,7 +109,7 @@ button{
     background-image: url("images/crno.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding:17em 12.5em;
+    padding:15em 12.5em;
     color: white;
 
 }
