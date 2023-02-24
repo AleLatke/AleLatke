@@ -131,7 +131,7 @@ button{
 }
 #pozadinaBela{
     padding: 2em 0em;
-    background-color: whitesmoke;
+    background: linear-gradient(242deg, rgba(224,224,224,1) 12%, rgba(79,217,227,1) 100%);
     max-width: 80%;
     margin: 0px auto;
 }
@@ -144,10 +144,10 @@ button{
     
     display: block;
     width: 100%;
+    border-bottom: 2px solid black;
 }
 .projekat img{
-    width: 34vw;
-    height: 32vh;
+    width:50%;
     border: 3px solid black;
     margin: 3.5em 0.5em;
     background-size: cover;
@@ -159,9 +159,11 @@ button{
 }
 .detalji{
     padding: 0.7em;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: black;
     margin: auto;
+    border: 2px solid black;
+    width: 50%;
 }
 /*
 .detalji {
@@ -247,20 +249,28 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
     html{
         font-size: 55%;
     }
-    .projekat{
-        width: 60vw;
-        height: 40vh;
-    }
 }
 @media only screen and (max-width:500px){
     html{
         font-size: 70%;
     }
-    .projekat{
-        width: 80vw;
-        height: 45vh;
-        margin: 0em auto 6em auto;
-        background-size:cover;
+    #pozadinaBela{
+        max-width: 100%;
+    }
+    .projekat img{
+        width: 100%;
+        margin:10px auto;
+        display: block;
+    }
+    .detalji{
+        width: 100%;
+        margin:10px auto 0px auto;
+        display: block;
+        border: none;
+    }
+    .postava{
+        display: block;
+        padding: 10px 5px;
     }
     #sviProjekti{
         background-color: transparent;
@@ -301,6 +311,8 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
     }
     #sadrzaj{
         padding:17em 3.8em;
+        margin: 0px auto;
+        text-align: center;
     }
     #header{
         position: relative;
@@ -308,6 +320,14 @@ background: linear-gradient(54deg, rgba(199,195,69,1) 24%, rgba(226,226,152,1) 8
     .omeni{
         padding: 10vh 8vw;
         width: 100%;
+        background: linear-gradient(242deg, rgba(224,224,224,1) 12%, rgba(79,217,227,1) 100%);  
+}
+.ime{
+    font-size: 2rem;
+}
+#sadrzaj h3{
+    font-size: 1.7rem;
+    margin-top: 1rem;
 }
 }
 
