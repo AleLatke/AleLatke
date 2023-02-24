@@ -126,49 +126,42 @@ button{
 }
 #podnaslov{
     text-align: center;
-    padding: 3rem;
+    margin: 3rem;
     font-weight: bold;
+}
+#pozadinaBela{
+    padding: 2em 0em;
+    background-color: whitesmoke;
+    max-width: 80%;
+    margin: 0px auto;
 }
 #sviProjekti{
     border:none;
     margin:0em 4em 5em 4em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 2em 0em;
-    background-color: whitesmoke;
-    border-radius: 4.5rem;
     
 }
 .projekat{
+    
+    display: block;
+    width: 100%;
+}
+.projekat img{
     width: 34vw;
     height: 32vh;
     border: 3px solid black;
     margin: 3.5em 0.5em;
-    cursor: pointer;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 }
-.projekat img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    background-size: cover;
-    background-repeat: no-repeat;
+.postava{
+    display: flex;
+    justify-content: space-between;
 }
 .detalji{
-    width: 16rem;
     padding: 0.7em;
     background-color: black;
     color: white;
-    position: absolute;
-    border: 2px solid dimgray;
-    display: none;
-    border-radius: 10px;
-    z-index: 2;
-    top: 3rem;
-    right:-3rem;
+    margin: auto;
 }
 /*
 .detalji {

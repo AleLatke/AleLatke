@@ -7,6 +7,8 @@ strana.addEventListener( 'click' , () => {
 /*
 let text = textTag.textContent  //Uzimanje sadrzaj teksta od id ime!*/
 
+
+/*
 let projekat = document.querySelectorAll('.projekat')
 let detalji = document.querySelectorAll('.detalji')
 
@@ -31,6 +33,7 @@ projekat.forEach(element => element.addEventListener( 'mouseleave' , () => {
     
 })
 )       
+*/
 
 
 let dugme = document.querySelector('#info')
